@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* #google_translate_element > div > a{
+  display: none !important;
+} */
+
+.navContainer{
+   /* font-family: "Public Sans"; */
+  }
+  
+  .hamburger{
+    display: none;
+  }
+
+  .activeLink{
+    position: relative;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+
+  .activeLink:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: #f5e7e4;
+    width: 100%;
+    transition: 0.5s;
+    border-radius: 20px;
+  }
+
+  .navLink{
+    position: relative;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+
+  .navLink:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: #f5e7e4;
+    width: 0;
+    transition: 0.5s;
+   
+  }
+
+  .navLink:hover:after{
+    transition: 0.5s;
+    border-radius: 20px;
+    width: 100%;
+  }
+
+
+  @media screen and (max-width: 1024px){
+    .hamburger{
+        display: flex;
+        align-items: center;
+        margin: 0 0 0 20px;
+    }
+  }
