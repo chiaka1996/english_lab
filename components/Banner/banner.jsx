@@ -88,11 +88,13 @@ const Banner = () => {
             </div>
 
             {/* button */}
-        <button 
-        className="relative text-[1.4rem] text-[#fff] rounded-[0.8rem] h-[4.5rem] w-[17rem] bg-primaryColor flex items-center justify-center gap-x-10">
+            <Link href="#contact" className='no-underline'>
+            <button 
+            className="relative text-[1.4rem] text-[#fff] rounded-[0.8rem] h-[4.5rem] w-[17rem] bg-primaryColor flex items-center justify-center gap-x-10">
             <span>Get in touch</span>
             <span className="material-icons ">arrow_forward</span>
             </button>
+            </Link>
         </div>
         <div className="relative w-[50rem] max-medium:w-full min-h-[40rem] max-medium:min-h-[30rem] rounded-[8px] bannerImage">
         <Image 
