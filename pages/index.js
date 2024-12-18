@@ -322,9 +322,8 @@ export default function Home() {
                     className='rounded-full'
                 />
             </div>
-
             <div className='testimonialBox max-w-[85rem] p-[3rem] bg-[#fff] max-medium:bg-[#f8f8f8] shadow-2xl rounded-[10px]'>
-                <h2 className='text-[2rem] font-primaryFamily text-[#000]'>Osuji Chiaka</h2>
+                <h2 className='text-[2rem] font-primaryFamily text-[#000]'>Chiaka Daniel</h2>
                 <p className='text-[#909090]'>
                 I was 17 years old when I joined AltSchool Africa. They have the best instructors for live classes 
                 and recorded lessons. Since I completed my program, I have been able to get jobs as a software engineer. 
