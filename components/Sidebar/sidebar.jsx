@@ -43,17 +43,16 @@ const SideBar = ({page}) => {
               )
             }
 
-         <div className='flex flex-row justify-between items-center gap-x-[1rem] max-lg:hidden'>
+         <div className='flex flex-row justify-center items-center gap-x-[1rem]'>
          <div className='flex items-center gap-x-[0.4rem]'>
-         {/* <span className="material-symbols-outlined text-primaryColor ml-[1rem]">call</span> */}
          <span className="material-icons text-primaryColor ml-[1rem] text-[1.4rem]">call</span>
-         <span className='text-[1.2rem]'>08084052359</span>
+         <span className='text-[1.2rem]'>+234814-645-0315</span>
          </div>
 
          <div>
          <a href='mailto:blessing@gmail.com' className='flex items-center gap-x-[0.4rem]'>
          <span className="material-icons text-primaryColor ml-[rem] text-[1.4rem]">mail</span>
-         <span className='text-[1.2rem]'>blessing@gmail.com</span>
+         <span className='text-[1.2rem]'>englishlabconsultancy@gmail.com</span>
          </a>
          </div>
          </div>

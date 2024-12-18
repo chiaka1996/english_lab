@@ -203,7 +203,7 @@ export default function Home() {
         <div className="relative w-[55rem] max-medium:w-full min-h-[42rem] max-medium:min-h-[30rem] aboutImage">
           <Image 
           fill
-          src="/images/banner3.jpg"
+          src="/images/bless.jpeg"
           alt="about us"
           className="rounded-[10px]"
           />
@@ -226,7 +226,7 @@ export default function Home() {
           you’re not just learning English—you’re 
           building skills that open doors to new opportunities. Join us to take the next step in your English journey!
           </p>
-          <p className="flex gap-x-[3rem] cursor-pointer">
+          <p className="flex gap-x-[2rem] cursor-pointer">
           <Image
           width={16}
           height={16}
