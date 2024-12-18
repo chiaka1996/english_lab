@@ -14,13 +14,13 @@ const Navigation = () => {
       className="font-primary z-[500] py-8 2xl:py-6 fixed top-0 left-0 w-full bg-[#f7e6e3]"
       >
         <div className='container flex flex-row justify-between items-center'>
-         {/* <Image 
-            src="/logo/slumtechLogo.png"
-            width="120"
-            height="60"
+         <Image 
+            src="/logo/logo.jpeg"
+            width="60"
+            height="40"
             alt="logo"
-        /> */}
-        <div>Eng</div>
+        />
+        
            <div className="flex flex-row gap-x-[7rem] justify-center items-center font-nav max-lg:hidden text-[#fff] text-[1.6rem]">
            
             <div className={router.asPath == "/#about" ? style.activeLink : style.navLink}> 

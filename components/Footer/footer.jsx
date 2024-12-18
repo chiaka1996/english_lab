@@ -7,16 +7,15 @@ const Footer = () => {
     const router = useRouter();
 
     return(
-        <footer className='bg-[#000] w-[100%] text-center py-[2em] text-[#fff]'>
-         <div className='container flex flex-row justify-between items-center mb-[5rem]'>
-         {/* <Image 
-            src="/logo/slumtechLogo.png"
-            width="120"
-            height="60"
+        <footer className='bg-[#000] w-[100%] text-center max-medium:text-left py-[2em] text-[#fff]'>
+         <div className='container flex flex-row max-medium:flex-col justify-between items-center max-medium:items-start max-medium:gap-y-[1.5rem] mb-[5rem]'>
+         <Image 
+            src="/logo/logo.jpeg"
+            width="60"
+            height="40"
             alt="logo"
-        /> */}
-        <div>Eng</div>
-           <div className="flex flex-row gap-x-[7rem] justify-center items-center font-nav max-lg:hidden text-[#fff] text-[1.6rem]">
+        />
+           <div className="max-medium:w-full flex flex-row max-medium:flex-col gap-x-[7rem] max-medium:gap-y-[1.5rem] justify-center items-center max-medium:items-start font-nav text-[#fff] text-[1.6rem]">
            
             <div className={router.asPath == "/#about" ? style.activeLink : style.navLink}> 
            <Link href="#about" className='no-underline'>
@@ -42,23 +41,23 @@ const Footer = () => {
             </Link>
             </div>
            </div>
-            <div className='flex flex-row justify-between items-center gap-x-[1rem]'>
+            <div className='flex flex-row max-medium:flex-col justify-between items-center max-medium:items-start gap-x-[1rem] max-medium:gap-y-[1.5rem]'>
            <div className='flex items-center gap-x-[0.4rem]'>
            {/* <span className="material-symbols-outlined text-primaryColor ml-[1rem]">call</span> */}
-           <span className="material-icons text-primaryColor ml-[1rem] text-[1.4rem]">call</span>
+           <span className="material-icons text-primaryColor ml-[1rem] max-medium:ml-0 text-[1.4rem]">call</span>
            <span className='text-[1.2rem]'>+234814-645-0315</span>
            </div>
 
            <div className=''>
            <a href='mailto:blessing@gmail.com' className='flex items-center gap-x-[0.4rem]'>
-           <span className="material-icons text-primaryColor ml-[rem] text-[1.4rem]">mail</span>
+           <span className="material-icons text-primaryColor ml-[1rem] max-medium:ml-0 text-[1.4rem]">mail</span>
            <span className='text-[1.2rem]'>englishlabconsultancy@gmail.com</span>
            </a>
            </div>
            </div>
            </div>
 
-        <div className=' w-full justify-center flex flex-row mt-[3rem]'>
+        <div className='container w-full justify-center max-medium:justify-start flex flex-row mt-[10rem] max-medium:mt-[2rem]'>
             <div className='relative w-[24px] h-[24px]'>
                 <Image
                  src="https://img.icons8.com/ios-filled/24/F5F5F5/facebook-new.png"

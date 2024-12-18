@@ -43,7 +43,7 @@ const SideBar = ({page}) => {
               )
             }
 
-         <div className='flex flex-row justify-center items-center gap-x-[1rem]'>
+         <div className='flex flex-row max-medium:flex-col justify-center items-center gap-x-[1rem] max-medium:gap-y-[3rem]'>
          <div className='flex items-center gap-x-[0.4rem]'>
          <span className="material-icons text-primaryColor ml-[1rem] text-[1.4rem]">call</span>
          <span className='text-[1.2rem]'>+234814-645-0315</span>
