@@ -8,7 +8,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { TextPlugin } from 'gsap/dist/TextPlugin'
 import Image from "next/image";
 import Link from "next/link";
-import {Navigation, Sidebar, OurServices, Footer, Banner, Contact} from "../components"
+import {Navigation, Sidebar, OurServices, Footer, Banner, Contact, Gallery} from "../components"
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
@@ -371,6 +371,18 @@ export default function Home() {
                 </p>
             </div>
             </div>
+      </div>
+    </section>
+
+    {/* gallery starts here */}
+    <section className="pt-[8rem] max-medium:pt-[3rem] pb-[5rem] max-medium:pb-[3rem]" id="">
+    <div className="container">
+    <div className="text-center">
+        {/* check global style for headers is in css */}
+      <span className="headers text-center text-[2.4rem] font-primaryFamily">See Us In Action</span>
+      {/* <h3 className="contactSubHeader"></h3> */}
+      </div>
+      <Gallery />
       </div>
     </section>
 
