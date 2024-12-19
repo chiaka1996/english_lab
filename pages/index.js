@@ -8,7 +8,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { TextPlugin } from 'gsap/dist/TextPlugin'
 import Image from "next/image";
 import Link from "next/link";
-import {Navigation, Sidebar, OurServices, Footer, Banner} from "../components"
+import {Navigation, Sidebar, OurServices, Footer, Banner, Contact} from "../components"
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
@@ -17,7 +17,6 @@ export default function Home() {
   const ourServiceSubHeader = "Supporting Your Journey to English Proficiency" 
   const aboutSubHeader = "We explore the world of English." 
   const learnersSubHeader = "No jokes - See proof here!"
-  const contactSubHeader = "Your English Goals, Our Priority"
 
   const [studentCount, setStudentCount] = useState(false);
   const [experienceCount, setExperienceCount] = useState(false);
@@ -75,7 +74,7 @@ export default function Home() {
       subHeaderEffect(ourServiceSubHeader, '.ourServiceSubHeader')
       subHeaderEffect(aboutSubHeader, '.aboutSubHeader')
       subHeaderEffect(learnersSubHeader, '.learnersSubHeader')
-      subHeaderEffect(contactSubHeader, '.contactSubHeader')
+      // subHeaderEffect(contactSubHeader, '.contactSubHeader')
       testimonialEffect('.testimonial-1')
       testimonialEffect('.testimonial-2')
       testimonialEffect('.testimonial-3')
@@ -383,34 +382,7 @@ export default function Home() {
       <h3 className="contactSubHeader"></h3>
       </div>
 
-      <form className="mt-[3rem] max-w-[70rem] mx-auto flex flex-col gap-y-[1.5rem]">
-       <div>
-        <label>fullname</label>
-        <input type="text" placeholder="john doe"  
-        className="text-[1.4rem] w-full h-[4.5rem] rounded-[8px] outline-none border border-[#808080] px-[1rem]"/>
-       </div>
-       <div>
-        <label>email</label>
-        <input type="email" placeholder="john doe"  
-        className="text-[1.4rem] w-full h-[4.5rem] rounded-[8px] outline-none border border-[#808080] px-[1rem]"/>
-       </div>
-      
-       <div>
-        <label>message</label>
-        <textarea 
-        placeholder="drop your message"
-        className="text-[1.4rem] rounded-[8px] outline-none border border-[#808080] px-[1rem] w-full h-[10.6rem]"
-        > 
-        </textarea>
-       </div>
-       <button
-        className="relative text-[1.6rem] text-[#fff] rounded-[0.8rem] h-[4.5rem] w-[17rem] bg-primaryColor flex items-center justify-center gap-x-3"
-       >
-        <span>send</span>
-       <span className="material-icons">send</span>
-       </button>
-
-      </form>
+      <Contact />
       </div>
     </section>
 

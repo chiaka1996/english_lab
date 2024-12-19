@@ -1,15 +1,14 @@
-import ConnectMongo from '../../utilis/MongoDb/connectDb';
-import modelMessages from '../../Model/contact';
 import {mailOptions, transporter} from "../../Config/nodemailer";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-const AddMessage = async (req, res) => {
+const Addmessage = async (req, res) => {
     try{
-        await ConnectMongo()
-        const {firstname, lastname, email, phone, message} = req.body;
+        const {name, email, message} = req.body;
 
         const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/gi;
 
-        if(!firstname || !lastname || !phone || !email || !message){
+        if(!name || !email || !message){
             return res.status(400).json({
                 message: "please fill all fields",
                 status: false,
@@ -17,7 +16,7 @@ const AddMessage = async (req, res) => {
             })
         }
 
-        if(firstname.length < 2 || lastname.length < 2){
+        if(name.length < 2){
             return res.status(400).json({
                 message: "name should be a minnimum of 2 characters",
                 status: false,
@@ -35,34 +34,16 @@ const AddMessage = async (req, res) => {
 
         await transporter.sendMail({
             ...mailOptions,
-            subject: "Slumtech Contact Message",
-            html: `<!DOCTYPE html><html lang="en"><body><div class="">
-            <h1>Slumtech Message</h1>
-            <p>firstname:<span>${firstname}</span></p>
-             <p>lastname:<span>${lastname}</span></p>
-            <p>Email:<span>${email}</span></p>
-            p>Phone:<span>${phone}</span></p>
-            <p>message:<span>${message}</span></p>
-            </div></body></html>`
+            subject: "English Lab Consultancy contact message",
+            html: `<!DOCTYPE html><html lang="en"><body><div class=""><h1>English Lab Consultancy website Message</h1><p>Sender Email:<span> <a href="mailto:chikajunior19@gmail.com">${email}</a></span></p><p>Name:<span> ${name}</span></p><p>message:<span> ${message}</span></p></div></body></html>`
         })
 
-        const saveMessage = new modelMessages({
-            firstname,
-            lastname,
-            email,
-            phone,
-            message
+        return res.status(200).json({
+            message: "message sent successfull",
+            status: true,
+            code: 200
         })
 
-        const response = await saveMessage.save()
-
-        if(response){
-            return res.status(200).json({
-                message: "message sent",
-                status: true,
-                code: 200
-            })
-        }
 
     }
     catch(error){
@@ -74,4 +55,4 @@ const AddMessage = async (req, res) => {
     }
 }
 
-export default AddMessage;
+export default Addmessage;
