@@ -393,7 +393,6 @@ export default function Home() {
       <span className="headers text-center text-[2.4rem] font-primaryFamily">Leave a Message</span>
       <h3 className="contactSubHeader"></h3>
       </div>
-
       <Contact />
       </div>
     </section>
