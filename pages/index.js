@@ -315,9 +315,9 @@ export default function Home() {
       <div className='flex max-medium:flex-col gap-x-[5rem] max-medium:gap-y-[4rem] mt-[3rem] testimonial-1'>
             <div className='relative w-[20rem] h-[20rem] rounded-full'>
                 <Image
-                    src="/images/banner2.jpg"
+                    src="/images/chiaka.jpeg"
                     fill
-                    alt="customer"
+                    alt="english lab consultancy testimonial"
                     className='rounded-full'
                 />
             </div>
@@ -342,11 +342,11 @@ export default function Home() {
                 </p>
             </div>
 
-            <div className='relative w-[20rem] h-[20rem] rounded-full'>
+            <div className='relative w-[20rem] h-[20rem] rounded-full bg-[#D3D3D3]'>
                 <Image
-                    src="/images/banner2.jpg"
+                    src="https://img.icons8.com/pastel-glyph/200/person-male--v3.png"
                     fill
-                    alt="customer"
+                    alt="english lab consultancy testimonial"
                     className='rounded-full'
                 />
             </div>
@@ -354,16 +354,16 @@ export default function Home() {
 
               {/* testimonial 3 */}
             <div className='flex  max-medium:flex-col max-medium:gap-y-[4rem] gap-x-[5rem] my-[5rem] testimonial-3'>
-            <div className='relative w-[20rem] h-[20rem] rounded-full'>
+            <div className='relative w-[20rem] h-[20rem] rounded-full bg-[#D3D3D3]'>
                 <Image
-                    src="/images/banner2.jpg"
+                    src="https://img.icons8.com/pastel-glyph/200/person-male--v3.png"
                     fill
-                    alt="customer"
+                    alt="english lab consultancy testimonial"
                     className='rounded-full'
                 />
             </div>
             <div className='testimonialBox3 max-w-[85rem] p-[3rem] bg-[#fff] max-medium:bg-[#f8f8f8] shadow-2xl rounded-[10px]'>
-                <h2 className='text-[2rem] font-primaryFamily text-[#000]'>Osuji Gloria</h2>
+                <h2 className='text-[2rem] font-primaryFamily text-[#000]'>O. Gloria</h2>
                 <p className='text-[#909090]'>
                 I was 17 years old when I joined AltSchool Africa. They have the best instructors for live classes 
                 and recorded lessons. Since I completed my program, I have been able to get jobs as a software engineer. 
