@@ -7,14 +7,14 @@ const Gallery = () => {
     return(
         <div className="mt-[3rem]">
         <Carousel className="">
-            <div className="h-[50rem] w-full relative">
-                <video controls preload="none" className="w-full h-[50rem]">
+            <div className="h-[50rem] max-medium:h-[35rem] w-full relative">
+                <video controls preload="none" className="w-full h-full h-full">
                 <source src="/videos/vid.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                     </video>
                     </div>
 
-                <div className="h-[50rem] w-full relative bg-[#000] relative">
+                <div className="h-full w-full relative bg-[#000] relative">
                 <Image
                     src="/images/gallery-1.jpeg"
                     fill
@@ -22,7 +22,7 @@ const Gallery = () => {
                     className=''
                 />
                 </div>
-                <div className="h-[50rem] w-full relative bg-[#000] relative">
+                <div className="h-full w-full relative bg-[#000] relative">
                 <Image
                     src="/images/gallery-2.jpeg"
                     fill
@@ -30,7 +30,7 @@ const Gallery = () => {
                     className=''
                 />
                 </div>
-                <div className="h-[50rem] w-full relative bg-[#000] relative">
+                <div className="h-full w-full relative bg-[#000] relative">
                 <Image
                     src="/images/gallery-3.jpeg"
                     fill
@@ -38,7 +38,7 @@ const Gallery = () => {
                     className=''
                 />
                 </div>
-                <div className="h-[50rem] w-full relative bg-[#000] relative">
+                <div className="h-full w-full relative bg-[#000] relative">
                 <Image
                     src="/images/gallery-4.jpeg"
                     fill
